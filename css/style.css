@@ -23,6 +23,19 @@ p{
 li{
  list-style-type: none;	
 }
+.outline{
+ width:440px;
+ height:48px;	
+}
+.main-navigation{
+ width:1200px;
+ height:56px;	
+}
+.background-photo{
+ background-image: url(../img/background_photo.png);
+ background-repeat: no-repeat;	
+ background-size: 1200px 500px;
+}
 .info-footer{
  font-weight: 700;
  width: 136px;
