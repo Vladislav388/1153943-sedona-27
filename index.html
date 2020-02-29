@@ -2,55 +2,63 @@
 <html lang="ru">
   <head>
 	  <meta charset="utf-8">
-	  <title>Седона</title>
+	  <title>Седона: Главная страница</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-  	    <nav class="main-navigation">
-  	  	  <ul>
-  	  	    <li><a href="information.html">информация</a></li>
-  	  	    <li><a href="fotoandvideo.html">фото и видео</a></li>
-  	  	    <li><a href="index.html"><img src="img/logo-sedona.svg" width="140" height="72" alt="sedona"></a></li>
-  	  	    <li><a href="map.html">карта штата</a></li>
-  	  	    <li><a href="catalog.html">гостиницы</a></li>
-  	  	  </ul>
-  	    </nav>   	
-  	</header>
-    <main>
-  	  <div class="background-photo">
-  	    <img src="img/intro-welcome.svg" width="459" height="353" alt="welcome to the sedona">	
-        
-  	  </div>
-  	  <h1 class="outline">
-  	    СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
-  	    ЗАСЛУЖИВАЮШИЙ БОЛЬШЕГО!	
-  	  </h1>
-  	  <p>
-  	    рассмотрим 5 причин, по которым седона круче, чем гранд каньон!	
-  	  </p>
-  	  <h2>
-  	    заинтересовались?	
-  	  </h2>
-  	  <p>
-  	    укажите предполагаемые даты поездки,<br>
-  	    и мы покажем вам лучшие предложения гостиниц в седоне 	
-  	  </p>
-    </main>  
-  	<footer>
-  	  <p class="info-footer">
-  	    #VISITSEDONA	
-  	  </p>
-      <a href="tel:+7495666-02-66">тел:+7(495) 666-02-66</a>	
-  	  <ul>
-        <li class="media twitter"><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Твитер"></a></li>
-        <li class="media fb"><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
-        <li class="media youtube"><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
-      </ul>  
-      <p>
-        WEBSITE BY
-        <a href=#><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="html academy"></a>	
-      </p>
-  	</footer>
+  	<div class="cover">
+      <header>
+  	    <ul class="main-navigation">
+  	  	  <li class="left"><a href="information.html">информация</a></li>
+  	  	  <li class="left"><a href="fotoandvideo.html">фото и видео</a></li>
+  	  	  <li class="logo"><a href="index.html"><img src="img/logo-sedona.svg" width="140" height="72" alt="sedona"></a></li>
+  	  	  <li class="right"><a href="map.html">карта штата</a></li>
+  	  	  <li class="right"><a href="catalog.html">гостиницы</a></li>
+  	  	</ul> 	
+  	  </header>
+      <main>
+        <section>
+  	      <div class="background-photo">
+  	        <img src="img/intro-welcome.svg" width="459" height="353" alt="welcome to the sedona">
+          </div>
+        </section>
+        <section class="paragraph">
+  	      <h1>
+  	        СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
+  	              <span>ЗАСЛУЖИВАЮШИЙ БОЛЬШЕГО!<span>	       
+  	      </h1>
+  	      <p>
+  	        рассмотрим 5 причин, по которым седона круче, чем гранд каньон!	
+  	      </p>
+  	    </section>
+        <section class="paragraph-2">
+  	      <h2>
+  	        заинтересовались?	
+  	      </h2>
+  	      <p>
+  	        укажите предполагаемые даты поездки,<br>
+  	        и мы покажем вам лучшие предложения гостиниц в седоне 	
+  	      </p>
+        </section>
+      </main>  
+  	  <footer class="index-footer">
+  	    <div class="info-footer">	
+  	      <p>
+  	        #VISITSEDONA
+  	      </p>  	
+          <a href="tel:+7495666-02-66">тел:+7(495) 666-02-66</a>
+        </div>	
+  	    <ul class="media-1">
+          <li><a href="#"><img class="media twitter" src="img/twitter.svg" width="17" height="15" alt="Твитер"></a></li>
+          <li><a href="#"><img class="media fb" src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+          <li><a href="#"><img class="media youtube" src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
+        </ul>
+        <div class="wedsite"> 
+            <span class="by">WEBSITE BY</span>
+              <a href=#><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="html academy"></a>	 
+        </div>
+  	  </footer>
+    </div>
   </body>
 </html> 
