@@ -20,7 +20,6 @@ li{
   list-style-type: none;	
 }	
 ul{
-/* Без обнуления сайт не много едет*/	
    margin-block-start: 0em;
    margin-block-end: 0em;
    margin-inline-start: 0px;
@@ -39,13 +38,12 @@ ul{
 .main-navigation{
   display: flex;
   justify-content: space-around;	
+  align-items: center;
 }
-.main-navigation li{
-/* Без маргина меню прилипает к верху мб из за того что я обнулил ul*/		
+.main-navigation li{		
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
-  margin-top:  15px;
 }
 
 .main-navigation{
@@ -83,11 +81,12 @@ ul{
 .polygon{
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   width: 1200px;
   height: 57px;	
   background: url(../img/polygon.png) no-repeat 50% 50%;		
 }
+
 .features-promo{
   margin-top: 61px;	
   text-align: center;	
@@ -99,6 +98,9 @@ ul{
 }
 
 .main-block{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
   padding-top: 56px;	
   padding-bottom: 57px; 
 }
@@ -110,27 +112,41 @@ ul{
 .block-background{	
   background-color: #81b3d2;
   color: #ffffff; 
+  line-height: 21px;
   text-align: center;
-	
 }
 
 .main-block-background{
   display: flex;
-
 }
 
 .mein-block-background-2{
-  display: flex;	
+  display: flex;
   padding-top: 70px;
 }
 
 .block-1{
-  float: left;	
-  padding: 46px 60px 64px 60px;
+  min-width: 400px;
+  max-height: 256px;
+  padding-top: 46px;
+  box-sizing: border-box;
+}
+
+.first-photo{
+  min-width: 800px;
+  max-height: 401px;
 }
 
 .block-2{	
-  padding: 49px 49px 65px 48px;	
+  min-width: 400px;
+  max-height: 256px;	
+  padding-top: 49px;
+  box-sizing: border-box;
+}
+
+.last-photo{
+  min-width: 800px;
+  max-height: 256px;
 }
 
 .one-third{
@@ -237,33 +253,26 @@ ul{
 /*finish footer*/
 /*вторая страница гостиницы*/
 .filter{
-  background: url(../img/filter_background.png) no-repeat 50% 20%;
-  width: 100:;
-  height: 216px;	
+  width: 1200px;
+  height: 215px;
+  background: url(../img/filter_background.png) no-repeat 50% 50%;
   position: relative;
+  background-size: cover;
   color: #ffffff;
 }
+/* начало меню*/
 .view-result{	
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   border-bottom: 1px solid #e5e5e5;
-}
-.view-result .photo{
-  width: 235px;
-  padding: 30px 0;
-  line-height: 0;
 }
 .view-result-1{
    border-top: 1px solid #e5e5e5;
 }
-.photo{
-  padding-top: 30px;	
-}
-
 .hotel{
-  padding-top: 10px;	
-}
 
+
+}
 .hotel p{
   padding-bottom: 2px;	
 }
@@ -293,12 +302,8 @@ ul{
 }
 .main-rating{	
   width: 185px;
-  padding-top: 28px;
-}
-.rating{
-  float: right;
-  padding: 3px 13px;
-  margin-right: 72px;
+
+
 }
 
 .main-rating .stars{
@@ -314,21 +319,16 @@ ul{
   padding-top: 18px;	
 }
 
-.details{
-  font-size: 14px;
-  font-weight: 700;	
+.details{	
   background-color: #81b3d2;	
   padding-top: 6px;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 6px;
-  line-height: 21px;
   margin-right: 6px;
  }
 
 .reserv{
-  font-size: 14px;
-  font-weight: 700;
   line-height: 21px;	
   background-color: #766357;
   padding-top: 6px;
@@ -340,7 +340,6 @@ ul{
 .rating{
   width: 81px;
   height: 16px;	
-  font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #666666;
