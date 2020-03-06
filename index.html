@@ -7,7 +7,6 @@
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
-  	<div class="cover">
       <header>
         <nav class="site-navigation">
   	      <ul class="main-navigation">
@@ -22,7 +21,7 @@
         </nav>
   	  </header>
       <main>
-        <section>
+        <section class="block-background-photo">
   	      <div class="background-photo">
   	        <img src="img/intro-welcome.svg" width="459" height="353" alt="welcome to the sedona">
              <div class="polygon">
@@ -40,7 +39,7 @@
   	      </p>
   	    </section>
         <section class="main-block">
-          <section class="main-block-background">
+          <div class="main-block-background">
             <div class="block-background block-1">
               <h2>
                 Настоящий<br>
@@ -55,9 +54,9 @@
             <div class="first-photo">
               <img src="img/background_view.png" width="800" height="256" alt="Красивый вид">
             </div> 
-           </section> 
-           <section class="block-other">
-             <div class="one-third one-block"> 
+           </div> 
+           <div class="block-other">
+             <div class="one-third"> 
               <div class="house">
                 <img src="img/house.svg" width="75" height=72 alt="Жильё">
               </div>  
@@ -69,7 +68,7 @@
                 мотеле, всё как в кино!
               </p>
             </div>
-            <div class="one-third two-block"> 
+            <div class="one-third"> 
               <div class="food">
                 <img src="img/food.svg" width="74" height="70" alt="Еда">
               </div>  
@@ -81,7 +80,7 @@
                 вы не разочаруетесь!
               </p>
             </div>
-            <div class="one-third three-block"> 
+            <div class="one-third"> 
               <div class="gift">
                 <img src="img/gift.svg" width="64" height="76" alt="Сувениры">
               </div>   
@@ -93,8 +92,8 @@
                 производства!
               </p>
             </div>
-          </section>
-          <section class="mein-block-background-2">
+          </div>
+          <div class="main-block-background-2">
             <div class="last-photo">
               <img src="img/background_view_2.png" width="800" height="256" alt="Красивый вид">
             </div>
@@ -103,16 +102,16 @@
                 Там есть<br>
                 Мост дьявола
               </h2>   
-                <span class="number">— №2 —</span><br>
+              <span class="number">— №2 —</span><br>
               <p>  
                 Да, по нему можно пройти! Если конечно<br> 
                    вы осмелитесь 
               </p>  
             </div>  
-          </section>
-            <div class="other-block-2">
-              <div>
-                <h2>
+          </div>
+          <div class="other-block-2">
+            <div>
+              <h2>
                 Небольшая<br>
                 площадь
               </h2> 
@@ -146,7 +145,8 @@
             </div>
           </div>  
         </section>
-        <section class="interesting">
+        <section class="interestind-block">
+        <div class="interesting">
   	      <h2>
   	        заинтересовались?	
   	      </h2>
@@ -154,9 +154,43 @@
   	        укажите предполагаемые даты поездки,<br>
   	        и мы покажем вам лучшие предложения гостиниц в седоне 	
   	      </p>
-        </section>
+          <div class="search-btn-main">
+          <a href="#" class="search-btn">Поиск гостиницы в Седоне</a>
+        </div>
+        <div class="form-intro">
+          <form class="user" method="post" action="https://echo.htmlacademy.ru">
+            <div class="form-block">    
+              <label>дата заезда:
+              <input type="date" id="date" name="check-in" value="2017-04-24"></label><br>
+            </div>
+            <div class="form-block2">
+              <label>дата выезда:
+              <input type="date" id="date2" name="check-out" value="2017-07-04"></label><br>
+            </div>
+            <div class="form-block3">
+              <label>взрослые:
+              <button type="button" class="minus"></button>  
+              <input type="number" id="amount" name="adults" value="2">
+              <button type="button" class="plus"></button>
+              </label>
+              <label>дети:
+              <button type="button" class="minus"></button>  
+              <input type="number" id="amount2" name="children" value="0">
+              <button type="button" class="plus"></button>
+              </label><br>
+            </div>
+            <div class="form-block5">
+              <button type="submit" id=button-intro>найти</button>  
+            </div>     
+            </form>
+          </div>  
+          </section>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d109582.8529236329!2d-111.81945262863633!3d34.8662732895429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1583481075278!5m2!1sru!2sru" width="1200" height="473" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
       </main>
   	  <footer class="index-footer">
+        <section class="block-footer">
   	    <div class="info-footer">	
   	      <p>
   	        #VISITSEDONA
@@ -172,7 +206,7 @@
             <span class="form-website">WEBSITE BY</span>
               <a href="https://up.htmlacademy.ru/htmlcss/27"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="html academy"></a>	 
         </div>
+      </section>
   	  </footer>
-    </div>
   </body>
 </html> 
