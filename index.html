@@ -7,6 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
+    <div class="cover">
       <header>
         <nav class="site-navigation">
   	      <ul class="main-navigation">
@@ -157,39 +158,13 @@
           <div class="search-btn-main">
           <a href="#" class="search-btn">Поиск гостиницы в Седоне</a>
         </div>
-        <div class="form-intro">
-          <form class="user" method="post" action="https://echo.htmlacademy.ru">
-            <div class="form-block">    
-              <label>дата заезда:
-              <input type="date" id="date" name="check-in" value="2017-04-24"></label><br>
-            </div>
-            <div class="form-block2">
-              <label>дата выезда:
-              <input type="date" id="date2" name="check-out" value="2017-07-04"></label><br>
-            </div>
-            <div class="form-block3">
-              <label>взрослые:
-              <button type="button" class="minus"></button>  
-              <input type="number" id="amount" name="adults" value="2">
-              <button type="button" class="plus"></button>
-              </label>
-              <label>дети:
-              <button type="button" class="minus"></button>  
-              <input type="number" id="amount2" name="children" value="0">
-              <button type="button" class="plus"></button>
-              </label><br>
-            </div>
-            <div class="form-block5">
-              <button type="submit" id=button-intro>найти</button>  
-            </div>     
-            </form>
-          </div>  
+      </div>
           </section>
           <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d109582.8529236329!2d-111.81945262863633!3d34.8662732895429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1583481075278!5m2!1sru!2sru" width="1200" height="473" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d109582.8529236329!2d-111.81945262863633!3d34.8662732895429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1583481075278!5m2!1sru!2sru" width="1200" height="594" frameborder="0" style="border:0;"></iframe>
           </div>
       </main>
-  	  <footer class="index-footer">
+  	  <footer class="index-footer index-footer1">
         <section class="block-footer">
   	    <div class="info-footer">	
   	      <p>
@@ -208,5 +183,33 @@
         </div>
       </section>
   	  </footer>
+        <div class="form-intro">
+          <form class="user" method="post" action="https://echo.htmlacademy.ru">
+            <div class="form-block">    
+              <label>дата заезда:
+              <input type="date" id="date" name="check-in" value="2017-04-24"></label><br>
+            </div>
+            <div class="form-block2">
+              <label>дата выезда:
+              <input type="date" id="date2" name="check-out" value="2017-07-04"></label><br>
+            </div>
+            <div class="form-block3">
+              <label>взрослые:
+              <button type="button" class="minus minus-1"></button>  
+              <input type="number" id="amount" name="adults" value="2">
+              <button type="button" class="plus plus-1"></button>
+              </label>
+              <label>дети:
+              <button type="button" class="minus minus-2"></button>  
+              <input type="number" id="amount2" name="children" value="0">
+              <button type="button" class="plus"></button>
+              </label><br>
+            </div>
+            <div class="form-block5">
+              <button type="submit" id=button-intro>найти</button>  
+            </div>     
+            </form>
+          </div>    
+      </div>        
   </body>
 </html> 

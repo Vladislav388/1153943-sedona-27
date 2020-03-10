@@ -7,6 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
+    <div class="cover">
       <header>
         <nav class="site-navigation">
           <ul class="main-navigation">
@@ -21,26 +22,64 @@
         </nav>
       </header>
       <main>
-        <section class="block-filter">
-          <div class="filter">
-            <div>
-              <form method="post" action="https://up.htmlacademy.ru/htmlcss/27">
+
+
+
+        <div class="block-filter">
+          <section class="cb-block">
+            <form method="post" action="https://up.htmlacademy.ru/htmlcss/27">
+              <div class="cb-1">
                 <h2>Инфраструктура:</h2>
-                <input type="checkbox" value="Бассейн" checked>Бассейн<Br>
-                <input type="checkbox" value="Парковка">Парковка<Br>
-                <input type="checkbox" value="wi-fi">Wi-Fi<Br> 
-              </form>
+                <div class="filter-checkbox">
+                  <input type="checkbox" value="Бассейн" checked>Бассейн<Br>
+                </div>
+                <div class="filter-checkbox">
+                  <input type="checkbox" value="Парковка">Парковка<Br>
+                </div>
+                <div class="filter-checkbox">
+                  <input type="checkbox" value="wi-fi">Wi-Fi<Br> 
+                </div>
               </div>
-              <div>
-                <form method="post" action="https://up.htmlacademy.ru/htmlcss/27">
-                  <h2>Тип жилья:</h2>
+              <div class="cb-2">
+                <h2>Тип жилья:</h2>
+                <div class="filter-checkbox">
                   <input type="checkbox" value="Гостиница" checked>Гостиница<Br>
+                </div>  
+                <div class="filter-checkbox">
                   <input type="checkbox" value="Мотель" checked>Мотель<Br>
+                </div>  
+                <div class="filter-checkbox">
                   <input type="checkbox" value="Апартаменты" checked>Апартаменты<Br> 
-              </form>
+                </div>  
+              </div>
+            </section>  
+            <div class="filter-price">
+              <p>Стоимость в сутки (Р):</p>
+              <div class="price-frame">
+                <div class="price-frame-input">
+                  от
+                  <input class="min-price" type="number" value="0">
+                </div>
+                <div class="price-frame-input">
+                  до
+                  <input class="max-price" type="number" value="3000">
+                </div>
+              </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
             </div>
+            <div class="toggle min-togglee"></div>  
+            <div class="toggle max-toggle"></div>
           </div>
-          </section>
+          <a href="#" class="btn-transparent">показать</a> 
+          </div>  
+          </form>
+          </div>
+
+
+
+
           <section class="block-catalog">
             <div class="width-block">
           <div class="view-result">
@@ -50,8 +89,10 @@
             <div class="hotel hotel-1">
               <h2>AMARA RESORT & SPA</h2>
               <p>гостиница<span>от 4000 Р.</span></p>
-              <span class="details-1"><a class="button details" href=# alt="подробнее">подробнее</a></span>
-              <span class="reserv-1"><a class="button reserv" href=# alt="забронировать">забронировать</a></span>
+              <div class="block-button">
+                <a class="button details" href=# alt="подробнее">подробнее</a>
+                <a class="button reserv" href=# alt="забронировать">забронировать</a>
+              </div>
             </div>
           </div>
           <div class="block-rating">
@@ -74,8 +115,10 @@
             <div class="hotel hotel-2">
               <h2>DESERT QUAL INN</h2>
               <p>МОТЕЛЬ<span>от 3000 Р.</span></p>
-              <a class="button details" href=# alt="подробнее">подробнее</a>
-              <a class="button reserv" href=# alt="забронировать">забронировать</a>
+              <div class="block-button">
+                <a class="details" href=# alt="подробнее">подробнее</a>
+                <a class="reserv" href=# alt="забронировать">забронировать</a>
+              </div>
             </div>
           </div>
           <div class="block-rating">
@@ -97,8 +140,10 @@
             <div class="hotel hotel-3">
               <h2>VILLAS AT POCO DIABLO</h2>
               <p>АПАРТАМЕНТЫ<span>от 2000 Р.</span></p>
-              <a class="details" href=# alt="подробнее">подробнее</a>
-              <a class="reserv" href=# alt="забронировать">забронировать</a>
+              <div class="block-button">
+                <a class="details" href=# alt="подробнее">подробнее</a>
+                <a class="reserv" href=# alt="забронировать">забронировать</a>
+              </div>
             </div>
           </div>
           <div class="block-rating">
@@ -131,5 +176,7 @@
               <a href="https://up.htmlacademy.ru/htmlcss/27"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="html academy"></a>   
         </div>
       </section>
+    </footer> 
+    </div> 
   </body>
 </html> 
