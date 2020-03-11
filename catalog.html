@@ -22,34 +22,49 @@
         </nav>
       </header>
       <main>
-
-
-
-        <div class="block-filter">
-          <form method="post" action="https://up.htmlacademy.ru/htmlcss/27">
+        <div class="filters block-filter">
+          <form method="get" action="https://up.htmlacademy.ru/htmlcss/27">
             <div class="cb-block">
               <div class="cb-1">
                 <h2>Инфраструктура:</h2>
                 <div class="filter-checkbox">
-                  <input type="checkbox" value="Бассейн" checked>Бассейн<Br>
+                  <input type="checkbox" value="Бассейн" id="ch1" checked>
+                    <label for="ch1">
+                      Бассейн
+                    </label>
                 </div>
                 <div class="filter-checkbox">
-                  <input type="checkbox" value="Парковка">Парковка<Br>
+                  <input type="checkbox" value="Парковка" id="ch2">
+                    <label for="ch2">
+                      Парковка
+                    </label>
                 </div>
                 <div class="filter-checkbox">
-                  <input type="checkbox" value="wi-fi">Wi-Fi<Br> 
+                  <input type="checkbox" value="wi-fi" id="ch3">
+                    <label for="ch3">
+                      Wi-Fi
+                    </label>  
                 </div>
               </div>
               <div class="cb-2">
                 <h2>Тип жилья:</h2>
                 <div class="filter-checkbox">
-                  <input type="checkbox" value="Гостиница" checked>Гостиница<Br>
+                  <input type="checkbox" value="Гостиница" id="ch4" checked>
+                    <label for="ch4">
+                      Гостиница
+                    </label>  
                 </div>  
                 <div class="filter-checkbox">
-                  <input type="checkbox" value="Мотель" checked>Мотель<Br>
+                  <input type="checkbox" value="Мотель" id="ch5" checked>
+                    <label for="ch5">
+                      Мотель
+                    </label>  
                 </div>  
                 <div class="filter-checkbox">
-                  <input type="checkbox" value="Апартаменты" checked>Апартаменты<Br> 
+                  <input type="checkbox" value="Апартаменты" id="ch6" checked>
+                    <label for="ch6">
+                      Апартаменты
+                    </label>
                 </div>  
               </div>
             </div>  
@@ -77,10 +92,22 @@
             </div>  
           </form>
         </div>
-
-
-
-
+        <!-- Начало строки результата-->
+        <div class="search-result">
+          <div class="search-result-left">найдено: 3</div>
+          <div class="search-result-center">
+            <ul>
+              <li>сортировка:</li>
+              <li class="button-blue">по цене</li>
+              <li class="button-dashed">по типу</li>
+              <li class="button-dashed">по рейтингу</li>
+            </ul>
+          </div>
+          <div class="search-result-right">
+            <a href="#" class="arrow icon-up-dir"></a>
+            <a href="#" class="arrow icon-down-dir"></a>
+          </div>
+        </div>
           <section class="block-catalog">
             <div class="width-block">
           <div class="view-result">

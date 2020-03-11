@@ -132,7 +132,7 @@ background: url(../img/polygon.png) no-repeat center;
   width: 1200px;
   height: 256px;
   display: flex;
-  padding-top: 70px;
+  padding-top: 75px;
 }
 
 .block-1{
@@ -199,12 +199,15 @@ background: url(../img/polygon.png) no-repeat center;
 }
 
 .interesting h2{
+  margin: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;	
 }
 
 .interesting p{
+  margin: 0;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 
@@ -235,6 +238,8 @@ background: url(../img/polygon.png) no-repeat center;
   display: flex;
   justify-content: center;
   position: absolute;
+
+  display: none;
 }
 
 .form-intro input{
@@ -450,18 +455,20 @@ input#date2{
 .block-filter{
   width: 1200px;
   height: 215px;
-  display: flex;
-  justify-content: space-around;
   background: url(../img/filter_background.png) no-repeat 50% 50%;
   position: relative;
   background-size: cover;
   color: #ffffff;
 }
 
+
 .block-filter form{
-  width: 1200px;
   display: flex;
   justify-content: space-between;
+  padding-left: 72px;
+  padding-right: 74px;
+  padding-top: 10px;
+  
 }
 
 .block-filter input[type="checkbox"]{
@@ -474,32 +481,59 @@ input#date2{
   line-height: 21px;
 }
 
+/*первый блок*/
+.cb-block{
+  width: 391px;
+  height: 155px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: top;
+}
+
 .filter-checkbox{
-  margin-top: 18px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;  
+  line-height: 21px; 
+  margin-top: 18px; 
 }
 
-.cb-block{
-  width: 520px;
-  height: 215px;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-}
+.filters input[type="checkbox"]:checked+label:before {
+  content: "\2";
+  background: url(../img/checkbox-on.svg) no-repeat; 
+  width: 27px;
+  height: 23px;
+  font-size: 24px
+  padding-right: 13px;
+  }
 
+.filters input[type="checkbox"]+label:before {
+  content: "\2";
+  background: url(../img/checkbox-off.svg) no-repeat;
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  font-size: 24px;
+  vertical-align: middle;
+  color: #fff;
+  opacity: .7;
+  padding-right: 13px;
+  }
+  .filters input[type="checkbox"]+label {
+    font-size: 14px;
+    cursor: pointer;
+}
+/*второй блок*/
 .filter-price{
-  width: 500px;
-  height: 215px;
+  width: 319px;
+  height: 130px;
 }
-
+/*стоимость в сутки*/
 .filter-title{
   font-weight: 700;
   font-size: 16px;
   color: #fff;
 }
-
+/*квадрат*/
 .price-frame{
   width: 314px;
   height: 32px;
@@ -508,7 +542,6 @@ input#date2{
   justify-content: center;
   border: 2px solid #fff;
 }
-
 
 .price-frame input{
   width: 44px;
@@ -562,9 +595,15 @@ input#date2{
 }
 
 .range-controls .scale{
-  background: #fff;
   width: 318px;
   height: 2px;
+  background: rgba(255,255,255,.3);
+}
+
+.scale .bar{
+  width: 80%;
+  height: 2px;
+  background: #fff;  
 }
 
 .toggle{
@@ -579,9 +618,69 @@ input#date2{
 }
 
 .max-toggle {
-    left: 230px;
+  left: 240px;
 }
+
 /* конец радио кнопок*/
+/*налачо строки результата*/
+.search-result{
+  width: 1200px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+}
+
+.search-result-left{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-left: 72px;
+  padding-right: 30px;
+}
+
+.search-result-center{
+  width: 880px;
+}
+
+.search-result-center ul{
+  width: 390px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.search-result-center li:first-child{
+  padding-right: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.button-blue{
+  color: #81b3d2;
+}
+
+.button-dashed{
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.arrow{
+
+}
+
+.icon-up-dir:before {
+  content: "\25b2";
+  color: #ccc;
+  font-size: 12px;
+
+}
+.icon-down-dir:before{
+  content:"\25bc";
+  color: #81b3d2;
+  font-size: 12px;
+}
 /* начало меню*/
 .block-catalog{
   width: 1200px;
@@ -594,38 +693,36 @@ input#date2{
   height: 153px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .view-result{	
-  width: 900px;
-  height: 153px;
+  width: 800px;
+  height: 90px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.block-rating{
-  width: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .hotel{
-  width: 710px;
+  width: 660px;
+  height: 90px;
+  margin-left: 28px;
+  box-sizing: border-box;
+}
 
+.photo{
+  height: 90px;
 }
 
 .hotel h2{
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-.hotel h2{
- padding-bottom: 12px;
+  width: 227px;
+  height: 16px;
+  font-size: 21px;
+  font-weight: 700;
+  margin:0;
+  margin-top: -2px;
 }
 
 .hotel-1 span{
@@ -641,55 +738,65 @@ input#date2{
 }
 
 .hotel p{
-  margin:0;
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 16px;
 }
 
-.main-rating{
+.block-button{
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details{
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+  color: #ffffff; 
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  padding-top: 4px;
+  box-sizing: border-box;
+}
+
+.reserv{
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+  color: #ffffff;  
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  padding-top: 4px;
+  box-sizing: border-box;
+}
+
+.block-rating{
+  width: 111px;
+  height: 90px;
 }
 
 .main-rating .stars{
   color: #81b3d2;
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 43px;
+  margin-bottom: 45px; 
 }
 
 .rating{
-  color: #666666;
-  background-color: #f2f2f2;
   width: 110px;
   height: 27px; 
   font-weight: 400;
-  line-height: 21px;
   padding-top: 5px;
+  color: #666666;
+  background-color: #f2f2f2;
   text-align: center;
   float: right;
   box-sizing: border-box;
-}
-
-.block-button{
-  width: 258px;
-  margin-top: 8px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.details{
-  background-color: #81b3d2;
-  color: #ffffff; 
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 21px;
-  padding: 3px 16px;
-}
-
-.reserv{
-  background-color: #766357;
-  color: #ffffff;  
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 21px;
-  padding: 3px 16px;
 }
 
 
