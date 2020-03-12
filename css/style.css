@@ -51,6 +51,15 @@ ul{
   line-height: 26px;
 }
 
+.main-navigation a:hover{
+  color: #81b3d2;
+}
+
+.main-navigation a:focus{
+  color: #000000;
+  opacity: 0.3;
+}
+
 .box-logo{
   min-width: 140px;
   min-height: 72px;	
@@ -211,15 +220,25 @@ background: url(../img/polygon.png) no-repeat center;
   padding-bottom: 50px;
 }
 
-.search-btn-main{
+.search-btn-main a{
   width: 568px;
   height: 86px;
+  display: inline-block;
   font-weight: 700;
   font-size: 21px;
   color: #ffffff;
   background-color: #766357;
   padding-top: 35px;
   box-sizing: border-box;
+}
+
+.search-btn-main a:hover{
+  background-color: #604e43;
+}
+
+.search-btn-main a:focus{
+  background-color: #503e33;
+  color: #847870;
 }
 
 .search-btn{
@@ -238,8 +257,6 @@ background: url(../img/polygon.png) no-repeat center;
   display: flex;
   justify-content: center;
   position: absolute;
-
-  display: none;
 }
 
 .form-intro input{
@@ -253,6 +270,7 @@ background: url(../img/polygon.png) no-repeat center;
   background: url("../img/calendar.png") no-repeat;
   background-position: 316px;
 }
+
 
 input#date{
   margin-left: 21px;
@@ -277,10 +295,28 @@ input#date2{
   border: 2px solid #f2f2f2;
 }
 
+#date:hover{
+  background-color: #ebebeb;
+}
+
+#date:focus{
+  background-color: #fff;
+  border: 2px solid #f2f2f2;
+}
+
 #date2{
   width: 346px;
   height: 38px;
   background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+
+#date2:hover{
+  background-color: #ebebeb;
+}
+
+#date2:focus{
+  background-color: #fff;
   border: 2px solid #f2f2f2;
 }
 
@@ -292,12 +328,30 @@ input#date2{
   text-align: center;
 }
 
+#amount:hover{
+  background-color: #ebebeb;
+}
+
+#amount:focus{
+  background-color: #fff;
+  border: 2px solid #f2f2f2;
+}
+
 #amount2{
   width: 38px;
   height: 32px;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
   text-align: center;  
+}
+
+#amount2:hover{
+  background-color: #ebebeb;
+}
+
+#amount2:focus{
+  background-color: #fff;
+  border: 2px solid #f2f2f2;
 }
 
 #button-intro{
@@ -348,6 +402,7 @@ input#date2{
   background-position: center;
 }
 
+
 .minus-1{
   margin-left: 35px;
 }
@@ -372,6 +427,15 @@ input#date2{
 
 .form-block5{
   padding-top: 53px;
+}
+
+.form-block5 #button-intro:hover{
+  background-color: #669ec0;
+}
+
+.form-block5 #button-intro:focus{
+  background-color: #5496bd;
+  color: #87b5d1;
 }
 /*finish menu*/
 /*footer*/
@@ -417,6 +481,15 @@ input#date2{
   margin-right: 6px;
 }
 
+.media:hover{
+  background-color: #669ec0;
+}
+
+.social .media:active {
+  color: rgba(255,255,255,.3);
+  background-color: #5496bd;
+}
+
 .twitter{
   padding-top: 17px;
   padding-left: 15px;
@@ -441,6 +514,7 @@ input#date2{
 .wedsite-logo{		
   padding-top: 39px;
 }
+
 
 .form-website{
   line-height: 40px;	
@@ -505,7 +579,11 @@ input#date2{
   font-size: 24px
   padding-right: 13px;
   }
-
+/*
+  .filter-checkbox input[type="checkbox"]+label:hover{
+    color: #fff;
+  }
+*/
 .filters input[type="checkbox"]+label:before {
   content: "\2";
   background: url(../img/checkbox-off.svg) no-repeat;
@@ -518,7 +596,11 @@ input#date2{
   opacity: .7;
   padding-right: 13px;
   }
-  .filters input[type="checkbox"]+label {
+
+.filters input[type="checkbox"]+label:hover{
+}
+
+.filters input[type="checkbox"]+label {
     font-size: 14px;
     cursor: pointer;
 }
@@ -587,6 +669,11 @@ input#date2{
   margin-left: 80px;
 }
 
+.btn-transparent:hover{
+  background-color: #fff;
+  color: #000;
+}
+
 .range-controls{
   position: relative;
   width: 98%;
@@ -619,6 +706,11 @@ input#date2{
 
 .max-toggle {
   left: 240px;
+}
+
+.toggle:hover{
+  width: 6px;
+  height: 6px;
 }
 
 /* конец радио кнопок*/
@@ -658,24 +750,34 @@ input#date2{
   line-height: 18px;
 }
 
-.button-blue{
+.search-result-center a:hover{
+  color: #81b3d2;
+}
+
+.search-result-center a:focus{
+  color: #000000;
+  border-bottom: none;
+}
+
+.button-blue a{
   color: #81b3d2;
 }
 
 .button-dashed{
   border-bottom: 1px dashed #81b3d2;
 }
-
-.arrow{
-
+/*
+.icon-up-dir:before:hover{
+  color: #000;
 }
-
+*/
 .icon-up-dir:before {
   content: "\25b2";
   color: #ccc;
   font-size: 12px;
-
+  padding-right: 3px;
 }
+
 .icon-down-dir:before{
   content:"\25bc";
   color: #81b3d2;
@@ -716,8 +818,17 @@ input#date2{
   height: 90px;
 }
 
+.hotel h2 > a:hover{
+  color: #81b3d2;
+}
+
+.hotel h2 > a:focus{
+  color: #000000;
+  opacity: 0.3;
+}
+
+
 .hotel h2{
-  width: 227px;
   height: 16px;
   font-size: 21px;
   font-weight: 700;
@@ -762,6 +873,16 @@ input#date2{
   box-sizing: border-box;
 }
 
+.details:hover{
+  color: #fff;
+  background-color: #669ec0;
+}
+
+.details:focus{
+  background-color: #5496bd;
+  color: #84b3d0;
+}
+
 .reserv{
   width: 142px;
   height: 27px;
@@ -773,6 +894,15 @@ input#date2{
   text-align: center;
   padding-top: 4px;
   box-sizing: border-box;
+}
+
+.reserv:hover{
+  background-color: #604e43;
+}
+
+.reserv:focus{
+  background-color: #503e33;
+  color: #84776f;
 }
 
 .block-rating{
