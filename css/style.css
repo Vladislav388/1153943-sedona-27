@@ -283,6 +283,10 @@ background: url(../img/polygon.png) no-repeat center;
   z-index: 3;
 }
 
+.form-show{
+  display: none;
+}
+
 .form-intro input{
   font-family: "PT Sans";
   font-size: 14px;
@@ -326,6 +330,7 @@ input#date2{
   margin-right: 21px;
   margin: 0 auto;
 }
+
 
 #date{
   width: 346px;
