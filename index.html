@@ -10,13 +10,19 @@
     <div class="cover">
       <header>
         <nav class="site-navigation">
-  	      <ul class="main-navigation">
-  	  	    <li><a href="information.html">информация</a></li>
-  	  	    <li><a href="fotoandvideo.html">фото и видео</a></li>
-            <li class="box-logo"></li>
-  	  	    <li><a href="map.html">карта штата</a></li>
-  	  	    <li><a href="catalog.html">гостиницы</a></li>
-  	  	  </ul> 	
+          <ul class="main-navigation">
+          	<div class="main-left">
+              <li><a href="information.html">информация</a></li>
+              <li><a href="fotoandvideo.html">фото и видео</a></li>
+            </div>
+            <div class="main-center">
+              <li class="box-logo"></li>
+            </div>
+            <div class="main-right">
+              <li><a href="map.html">карта штата</a></li>
+              <li><a href="catalog.html">гостиницы</a></li>
+            </div>
+          </ul>   
           <img class="logo" src="img/logo-sedona.svg" width="140" height="72" alt="sedona">
         </nav>
   	  </header>
@@ -174,33 +180,35 @@
             <li><a href="#"><img class="media fb" src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
             <li><a href="#"><img class="media youtube" src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
           </ul>
-          <div class="wedsite-logo"> 
+          <div class="website-logo"> 
             <span class="form-website">WEBSITE BY</span>
-            <a href="https://up.htmlacademy.ru/htmlcss/27"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="html academy"></a>	 
+              <a href="https://up.htmlacademy.ru/htmlcss/27">
+              	<img  class="logo-alpha" src="img/logo-htmlacademy.svg" width="115" height="41" alt="html academy">
+              	<img class="logo-hover" src="img/logo_name_blue_hover.png" width="115" height="41">
+              	<img class="logo-focus" src="img/logo_name_focus.png" width="115" height="41">
+              </a>   
           </div>
         </section>
   	  </footer>
         <div class="form-intro">
           <form class="user" method="post" action="https://echo.htmlacademy.ru">
             <div class="form-block">    
-              <label>дата заезда:
-              <input type="date" id="date" name="check-in" value="2017-04-24"></label><br>
+              <label for="date">дата заезда:</label>
+              <input type="text" id="date" name="check-in" placeholder="24 АПРЕЛЯ 2017"><br>
             </div>
             <div class="form-block2">
-              <label>дата выезда:
-              <input type="date" id="date2" name="check-out" value="2017-07-04"></label><br>
+              <label for="date2">дата выезда:</label>
+              <input type="text" id="date2" name="check-out" placeholder="4 ИЮЛЯ 2017"><br>
             </div>
             <div class="form-block3">
-              <label>взрослые:
-              <button type="button" class="minus minus-1"></button>  
+              <label for="amount">взрослые:</label>
+              <button type="button" class="minus minus-1">-</button>  
               <input type="number" id="amount" name="adults" value="2">
-              <button type="button" class="plus plus-1"></button>
-              </label>
-              <label>дети:
-              <button type="button" class="minus minus-2"></button>  
-              <input type="number" id="amount2" name="children" value="0">
-              <button type="button" class="plus"></button>
-              </label>
+              <button type="button" class="plus plus-1">+</button>
+              <label for="amount2">дети:</label>
+              <button type="button" class="minus minus-2">-</button>  
+                <input type="number" id="amount2" name="children" value="0">
+              <button type="button" class="plus">+</button>
             </div>
             <div class="form-block5">
               <button type="submit" id=button-intro>найти</button>  

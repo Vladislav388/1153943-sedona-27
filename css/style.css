@@ -44,12 +44,29 @@ ul{
   display: flex;
   justify-content: space-around;	 
   align-items: center;
-  flex-wrap: wrap;
 }
 .main-navigation li{	
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
+}
+
+.main-left{
+  width: 480px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-center{
+  width: 244px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-right{
+  width: 480px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .main-navigation a:hover{
@@ -273,11 +290,26 @@ background: url(../img/polygon.png) no-repeat center;
   line-height: 26px;
 }
 
-.form-intro input[type="date"]{
+.form-intro input[type="text"]{
   background: url("../img/calendar.png") no-repeat;
   background-position: 316px;
+  padding-left: 13px;
+  box-sizing: border-box;
 }
 
+.form-intro input[type="text"]:hover{
+  background: url("../img/calendar-hover.png") no-repeat;
+  background-position: 316px;
+  padding-left: 13px;
+  box-sizing: border-box;
+}
+
+.form-intro input[type="text"]:focus{
+  background: url("../img/calendar-focus.png") no-repeat;
+  background-position: 316px;
+  padding-left: 13px;
+  box-sizing: border-box;
+}
 
 input#date{
   margin-left: 21px;
@@ -388,11 +420,27 @@ input#date2{
   height: 38px;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
-  background-image: url("../img/minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  color: #a9a9a9;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 800;
 }
 
+.minus:hover{
+  color: #000;
+}
+
+.plus:hover{
+  color: #000;
+}
+
+.minus:focus{
+  color: #81b3d2;
+}
+
+.plus:focus{
+  color: #81b3d2;
+}
 
 .minus-1{
   margin-left: 35px;
@@ -405,11 +453,15 @@ input#date2{
 .plus{
   width: 38px;
   height: 38px;
+  color: #a9a9a9;
   background-color: #f2f2f2;
-  border: 2px solid #f2f2f2;
-  background-image: url("../img/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;  
+  border: 2px solid #f2f2f2; 
+  color: #a9a9a9;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 5px;
+  padding-right: 12px;
 }
 
 .plus-1{
@@ -496,8 +548,7 @@ input#date2{
   background-color: #669ec0;
 }
 
-.social .media:active {
-  color: rgba(255,255,255,.3);
+a:focus img.media{
   background-color: #5496bd;
 }
 
@@ -522,10 +573,36 @@ input#date2{
   padding-bottom: 16px; 
 }
 
-.wedsite-logo{		
+.website-logo{		
   padding-top: 39px;
 }
 
+.logo-hover{
+  display: none;
+}
+
+.logo-focus{
+  display: none;
+}
+a:hover img.logo-alpha{
+  display: none;
+}
+
+a:hover img.logo-hover{
+  display: inline-block;
+}
+
+a:hover img.logo-focus{
+  display: none;
+}
+
+a:focus img.logo-hover{
+  display: none;
+}
+
+a:focus img.logo-focus{
+  display: inline-block;
+}
 
 .form-website{
   line-height: 40px;	
@@ -533,6 +610,7 @@ input#date2{
   vertical-align: top;
   padding-right: 8px;
 }
+
 /*finish footer*/
 /*вторая страница гостиницы*/
 
@@ -589,12 +667,15 @@ input#date2{
   height: 23px;
   font-size: 24px
   padding-right: 13px;
+  opacity: .7;
   }
-/*
-  .filter-checkbox input[type="checkbox"]+label:hover{
-    color: #fff;
+
+.filters input[type="checkbox"]:checked+label:hover:before {
+  content: "";
+  background: url(../img/checkbox-on.svg) no-repeat; 
+  opacity: 1;
   }
-*/
+
 .filters input[type="checkbox"]+label:before {
   content: "";
   background: url(../img/checkbox-off.svg) no-repeat;
@@ -603,17 +684,19 @@ input#date2{
   height: 23px;
   font-size: 24px;
   vertical-align: middle;
-  color: #fff;
-  opacity: .7;
   padding-right: 13px;
+  opacity: .7;
   }
 
-.filters input[type="checkbox"]+label:hover{
-}
+.filters input[type="checkbox"]+label:hover:before {
+  content: "";
+  background: url(../img/checkbox-off.svg) no-repeat;
+  opacity: 1;
+  }
 
 .filters input[type="checkbox"]+label {
-    font-size: 14px;
-    cursor: pointer;
+  font-size: 14px;
+  cursor: pointer;
 }
 /*второй блок*/
 .filter-price{
@@ -777,11 +860,7 @@ input#date2{
 .button-dashed{
   border-bottom: 1px dashed #81b3d2;
 }
-/*
-.icon-up-dir:before:hover{
-  color: #000;
-}
-*/
+
 .icon-up-dir:before {
   content: "\25b2";
   color: #ccc;
@@ -789,10 +868,22 @@ input#date2{
   padding-right: 3px;
 }
 
+.arrow:before:hover{
+  color: #000;
+}
+
 .icon-down-dir:before{
   content:"\25bc";
   color: #81b3d2;
   font-size: 12px;
+}
+
+a:hover:before{
+ color: #000;
+}
+
+a:focus:before{
+  color: #81b3d2;
 }
 /* начало меню*/
 .block-catalog{
