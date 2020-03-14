@@ -544,7 +544,7 @@ input#date2{
   padding-top: 36px;
 }
 
-.media{
+.media {
   background-color: #81b3d2;
   margin-right: 6px;
 }
@@ -555,6 +555,58 @@ input#date2{
 
 a:focus img.media{
   background-color: #5496bd;
+}
+
+.twitter-hover{
+  display: none;
+}
+
+a:focus img.twitter{
+  display: none;
+}
+
+a:focus img.twitter-hover{
+  display: inline-block;
+  background-color: #5496bd;
+  padding-top: 17px;
+  padding-left: 15px;
+  padding-right: 14px;
+  padding-bottom: 16px; 
+  margin-right: 6px;
+}
+
+.facebook-hover{
+  display: none;
+}
+
+a:focus img.fb{
+  display: none;
+}
+
+a:focus img.facebook-hover{
+  display: inline-block;
+  background-color: #5496bd;
+  padding-top: 13px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 13px;
+}
+
+.youtube-hover{
+  display: none;
+}
+
+a:focus img.youtube{
+  display: none;
+}
+
+a:focus img.youtube-hover{
+  display: inline-block;
+  background-color: #5496bd;
+  padding-top: 16px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 16px;
 }
 
 .twitter{
@@ -651,18 +703,23 @@ a:focus img.logo-focus{
 
 /*первый блок*/
 .cb-block{
-  width: 391px;
+  width: 400px;
   height: 155px;
   display: flex;
   justify-content: space-between;
-  vertical-align: top;
+}
+
+.cb-block h2{
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 .filter-checkbox{
   font-size: 14px;
   font-weight: 400;
   line-height: 21px; 
-  margin-top: 18px; 
+  margin-bottom: 18px; 
 }
 
 .filters input[type="checkbox"]:checked+label:before {
@@ -702,6 +759,25 @@ a:focus img.logo-focus{
 .filters input[type="checkbox"]+label {
   font-size: 14px;
   cursor: pointer;
+}
+
+
+.cb-order{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: auto;
+  height: 124px;
+}
+
+.cb-order2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: auto;
+  height: 124px;
 }
 /*второй блок*/
 .filter-price{
