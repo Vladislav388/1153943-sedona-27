@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Седона:форма</title>
+    <link href="css/normalize-min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">	
+</head>
+<body>
+      <header>
+        <nav class="site-navigation">
+          <div class="main-left">
+          <ul class="main-navigation">
+            <li><a href="information.html">информация</a></li>
+            <li><a href="fotoandvideo.html">фото и видео</a></li>
+          </ul>    
+          </div>
+          <div class="main-center">
+            <ul class="main-navigation">
+              <li class="box-logo"></li>
+            </ul>
+          </div>
+          <div class="main-right">
+            <ul class="main-navigation">
+              <li><a href="map.html">карта штата</a></li>
+              <li><a href="catalog.html">гостиницы</a></li>
+            </ul>
+          </div> 
+          <img class="logo" src="img/logo-sedona.svg" width="140" height="72" alt="sedona">
+        </nav>
+  	  </header>
+      <main>
+        <section class="block-background-photo">
+  	      <div class="background-photo">
+          </div>
+        </section>
+          	  <footer class="index-footer">
+        <section class="block-footer">
+  	      <div class="info-footer">	
+  	        <p>
+  	          #VISITSEDONA
+  	        </p>  	
+            <a href="tel:+7495666-02-66">тел: +7(495) 666-02-66</a>
+          </div>	
+          <ul class="social">
+            <li><a href="#">
+                  <img class="media twitter" src="img/twitter.svg" width="17" height="15" alt="Твитер">
+                  <img class="twitter-hover" src="img/twitter_hover.png" width="17" height="15" alt="Твитер">
+                </a></li>
+            <li><a href="#">
+                  <img class="media fb" src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+                  <img class="media facebook-hover" src="img/fb-hover.png" width="12" height="22" alt="Фейсбук">
+                </a></li>
+            <li><a href="#">
+                  <img class="media youtube" src="img/youtube.svg" width="20" height="16" alt="YouTube">
+                  <img class="media youtube-hover" src="img/youtube-hover1.png" width="20" height="16" alt="YouTube">
+                </a></li>
+          </ul>
+          <div class="website-logo"> 
+            <span class="form-website">WEBSITE BY</span>
+              <a href="https://up.htmlacademy.ru/htmlcss/27">
+              	<img  class="logo-alpha" src="img/logo-htmlacademy.svg" width="115" height="41" alt="html academy">
+              	<img class="logo-hover" src="img/logo_name_blue_hover.png" width="115" height="41" alt="html academy_hover">
+              	<img class="logo-focus" src="img/logo_name_focus.png" width="115" height="41" alt="html academy_focus">
+              </a>   
+          </div>
+        </section>
+  	  </footer>
+        <div class="form-intro">
+          <form class="user" method="post" action="https://echo.htmlacademy.ru">
+            <div class="form-block">    
+              <label for="date">дата заезда:</label>
+              <input class="dater" type="text" id="date" name="check-in" placeholder="24 АПРЕЛЯ 2017"><br>
+            </div>
+            <div class="form-block2">
+              <label for="date2">дата выезда:</label>
+              <input class="dater2" type="text" id="date2" name="check-out" placeholder="4 ИЮЛЯ 2017"><br>
+            </div>
+            <div class="form-block3">
+              <label for="amount">взрослые:</label>
+              <button type="button" class="minus minus-1">-</button>  
+              <input class="amounts" type="number" id="amount" name="adults" value="2">
+              <button type="button" class="plus plus-1">+</button>
+              <label for="amount2">дети:</label>
+              <button type="button" class="minus minus-2">-</button>  
+              <input class="amounts2" type="number" id="amount2" name="children" value="0">
+              <button type="button" class="plus">+</button>
+            </div>
+            <div class="form-block5">
+              <button class="button-form-search" type="submit">найти</button>  
+            </div>     
+            </form>
+          </div> 
+</body>
+</html>

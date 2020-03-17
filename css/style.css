@@ -20,11 +20,7 @@ li{
   list-style-type: none;	
 }	
 ul{
-   margin-block-start: 0em;
-   margin-block-end: 0em;
-   margin-inline-start: 0px;
-   margin-inline-end: 0px;
-   padding-inline-start: 0px;	
+   margin: 0;
 }
 .cover{
   width: 1200px;
@@ -146,8 +142,18 @@ background: url(../img/polygon.png) no-repeat center;
   text-align: center;
 }
 
+.block-background h2{
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  padding-bottom: 20px;
+}
+
 .block-background p{
   color: #ffffff; 
+  margin: 0;
+  padding-top: 20px;
 }
 
 .main-block-background{
@@ -188,8 +194,15 @@ background: url(../img/polygon.png) no-repeat center;
 }
 
 .one-third{
-  padding-top: 58px;
+  padding-top: 60px;
   text-align: center;
+}
+
+.one-third p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 0;
 }
 
 .block-other{
@@ -205,11 +218,24 @@ background: url(../img/polygon.png) no-repeat center;
   height: 256px;
   background-color: #eeeeee; 
   margin: 0;
-  padding-top: 47px; 
+  padding-top: 50px; 
   display: flex;
   justify-content: space-around;	
   text-align: center;	
   box-sizing: border-box;
+}
+
+.two-third h2{
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.two-third p{
+  margin: 0;
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .main-block span{	
@@ -237,14 +263,17 @@ background: url(../img/polygon.png) no-repeat center;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 50px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .search-btn-main a{
   width: 568px;
   height: 86px;
   display: inline-block;
-  font-weight: 700;
   font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
   color: #ffffff;
   background-color: #766357;
   padding-top: 35px;
@@ -281,6 +310,12 @@ background: url(../img/polygon.png) no-repeat center;
   margin-top: -600px;
   margin-left: 316px;
   z-index: 3;
+
+}
+
+.user{
+animation: zoom-out 0.9s ease-in-out forwards;
+    display: block;
 }
 
 .form-show{
@@ -315,12 +350,12 @@ background: url(../img/polygon.png) no-repeat center;
   box-sizing: border-box;
 }
 
-input#date{
+input.dater{
   margin-left: 21px;
 }
 
-input#date2{
-  margin-left: 17px;
+input.dater2{
+margin-left: 17px;
 }
 
 .form-intro label{
@@ -331,40 +366,39 @@ input#date2{
   margin: 0 auto;
 }
 
-
-#date{
+input.dater[type="text"]{
   width: 346px;
   height: 38px;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
 }
 
-#date:hover{
+input.dater[type="text"]:hover{
   background-color: #ebebeb;
 }
 
-#date:focus{
+input.dater[type="text"]:focus{
   background-color: #fff;
   border: 2px solid #f2f2f2;
 }
 
-#date2{
+input.dater2[type="text"]{
   width: 346px;
   height: 38px;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
 }
 
-#date2:hover{
+input.dater2[type="text"]:hover{
   background-color: #ebebeb;
 }
 
-#date2:focus{
+input.dater2[type="text"]:focus{
   background-color: #fff;
   border: 2px solid #f2f2f2;
 }
 
-#amount{
+input.amounts[type="number"]{
   width: 38px;
   height: 32px;
   background-color: #f2f2f2;
@@ -372,16 +406,16 @@ input#date2{
   text-align: center;
 }
 
-#amount:hover{
+input.amounts[type="number"]:hover{
   background-color: #ebebeb;
 }
 
-#amount:focus{
+input.amounts[type="number"]:focus{
   background-color: #fff;
   border: 2px solid #f2f2f2;
 }
 
-#amount2{
+input.amounts2[type="number"]{
   width: 38px;
   height: 32px;
   background-color: #f2f2f2;
@@ -389,15 +423,14 @@ input#date2{
   text-align: center;  
 }
 
-#amount2:hover{
+input.amounts2[type="number"]:hover{
   background-color: #ebebeb;
 }
 
-#amount2:focus{
+input.amounts2[type="number"]:focus{
   background-color: #fff;
   border: 2px solid #f2f2f2;
 }
-
 
 .form-block{
   display: flex;
@@ -470,10 +503,10 @@ input#date2{
 }
 
 .plus-1{
-  margin-right: 44px;
+  margin-right: 38px;
 }
 
-#button-intro{
+.button-form-search{
   width: 458px;
   height: 58px;
   background-color: #81b3d2;
@@ -490,11 +523,11 @@ input#date2{
   padding-top: 53px;
 }
 
-.form-block5 #button-intro:hover{
+.button-form-search:hover{
   background-color: #669ec0;
 }
 
-.form-block5 #button-intro:focus{
+.button-form-search:focus{
   background-color: #5496bd;
   color: #87b5d1;
 }
@@ -516,7 +549,7 @@ input#date2{
 }
 
 .index-footer1{
-    margin-top: -120px;
+  margin-top: -120px;
 }
 
 .block-footer{
@@ -566,7 +599,7 @@ a:focus img.twitter{
 }
 
 a:focus img.twitter-hover{
-  display: inline-block;
+  display: flex;
   background-color: #5496bd;
   padding-top: 17px;
   padding-left: 15px;
@@ -584,7 +617,7 @@ a:focus img.fb{
 }
 
 a:focus img.facebook-hover{
-  display: inline-block;
+  display: flex;
   background-color: #5496bd;
   padding-top: 13px;
   padding-left: 17px;
@@ -601,7 +634,7 @@ a:focus img.youtube{
 }
 
 a:focus img.youtube-hover{
-  display: inline-block;
+  display: flex;
   background-color: #5496bd;
   padding-top: 16px;
   padding-left: 13px;
@@ -647,6 +680,7 @@ a:hover img.logo-alpha{
 
 a:hover img.logo-hover{
   display: inline-block;
+  vertical-align: top;
 }
 
 a:hover img.logo-focus{
@@ -659,6 +693,7 @@ a:focus img.logo-hover{
 
 a:focus img.logo-focus{
   display: inline-block;
+  vertical-align: top;
 }
 
 .form-website{
@@ -703,7 +738,7 @@ a:focus img.logo-focus{
 
 /*первый блок*/
 .cb-block{
-  width: 400px;
+  width: 390px;
   height: 155px;
   display: flex;
   justify-content: space-between;
@@ -713,13 +748,16 @@ a:focus img.logo-focus{
   margin: 0;
   padding-top: 15px;
   padding-bottom: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
 }
 
 .filter-checkbox{
   font-size: 14px;
   font-weight: 400;
   line-height: 21px; 
-  margin-bottom: 18px; 
+  margin-bottom: 20px; 
 }
 
 .filters input[type="checkbox"]:checked+label:before {
@@ -768,7 +806,6 @@ a:focus img.logo-focus{
   flex-wrap: wrap;
   justify-content: flex-start;
   width: auto;
-  height: 124px;
 }
 
 .cb-order2{
@@ -777,7 +814,6 @@ a:focus img.logo-focus{
   flex-wrap: wrap;
   justify-content: flex-start;
   width: auto;
-  height: 124px;
 }
 /*второй блок*/
 .filter-price{
@@ -811,18 +847,16 @@ a:focus img.logo-focus{
 }
 
 .price-frame-input{
-  width: 47%;
+  margin: 0 auto;
   text-align: center;
 }
 
 .price-frame-input p{
   display: inline-block;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin: 0;
   color: #fff;
 }
+
 
 .price-frame-input-line{
   display: inline-block;
@@ -863,7 +897,7 @@ a:focus img.logo-focus{
 }
 
 .scale .bar{
-  width: 80%;
+  width: 85%;
   height: 2px;
   background: #fff;  
 }
@@ -880,7 +914,7 @@ a:focus img.logo-focus{
 }
 
 .max-toggle {
-  left: 240px;
+  left: 250px;
 }
 
 .toggle:hover{
@@ -898,28 +932,30 @@ a:focus img.logo-focus{
 }
 
 .search-result-left{
+  width: 125px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   padding-left: 72px;
-  padding-right: 30px;
-}
-
-.search-result-center{
-  width: 880px;
 }
 
 .search-result-center ul{
-  width: 390px;
+  width: 830px;
   display: flex;
-  justify-content: space-around;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+  margin-right: 33px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.button-dashed{
+  margin-right: 33px;
 }
 
 .search-result-center li:first-child{
-  padding-right: 12px;
+  padding-right: 40px;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -934,8 +970,10 @@ a:focus img.logo-focus{
   border-bottom: none;
 }
 
+
 .button-blue a{
   color: #81b3d2;
+  margin-right: 33px;
 }
 
 .button-dashed{
@@ -1001,15 +1039,14 @@ a:focus:before{
   height: 90px;
 }
 
-.hotel h2 > a:hover{
+.hotel h2 a:hover{
   color: #81b3d2;
 }
 
-.hotel h2 > a:focus{
+.hotel h2 a:focus{
   color: #000000;
   opacity: 0.3;
 }
-
 
 .hotel h2{
   height: 16px;

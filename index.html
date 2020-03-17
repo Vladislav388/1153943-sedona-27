@@ -3,8 +3,8 @@
   <head>
 	  <meta charset="utf-8">
 	  <title>Седона: Главная страница</title>
+    <link href="css/normalize-min.css" rel="stylesheet">
     <link href="css/style-min.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <div class="cover">
@@ -118,7 +118,7 @@
             </div>  
           </div>
           <div class="other-block-2">
-            <div>
+            <div class="two-third">
               <h2>
                 Небольшая<br>
                 площадь
@@ -129,7 +129,7 @@
                 находятся очень близко
               </p>
             </div>
-            <div>
+            <div class="two-third">
               <h2>
                 Красивая<br>
                 дорога
@@ -140,7 +140,7 @@
                 не скучно!
               </p>
             </div>
-            <div>  
+            <div class="two-third">  
               <h2>
                 Мало<br>
                 туристов
@@ -163,7 +163,7 @@
   	          и мы покажем вам лучшие предложения гостиниц в седоне
   	        </p>
             <div class="search-btn-main">
-              <a href="#" class="search-btn">Поиск гостиницы в Седоне</a>
+              <a href="form.html" class="search-btn">Поиск гостиницы в Седоне</a>
             </div>
           </div>
         </section>
@@ -207,28 +207,28 @@
           <form class="user" method="post" action="https://echo.htmlacademy.ru">
             <div class="form-block">    
               <label for="date">дата заезда:</label>
-              <input type="text" id="date" name="check-in" placeholder="24 АПРЕЛЯ 2017"><br>
+              <input class="dater" type="text" id="date" name="check-in" placeholder="24 АПРЕЛЯ 2017"><br>
             </div>
             <div class="form-block2">
               <label for="date2">дата выезда:</label>
-              <input type="text" id="date2" name="check-out" placeholder="4 ИЮЛЯ 2017"><br>
+              <input class="dater2" type="text" id="date2" name="check-out" placeholder="4 ИЮЛЯ 2017"><br>
             </div>
             <div class="form-block3">
               <label for="amount">взрослые:</label>
               <button type="button" class="minus minus-1">-</button>  
-              <input type="number" id="amount" name="adults" value="2">
+              <input class="amounts" type="number" id="amount" name="adults" value="2">
               <button type="button" class="plus plus-1">+</button>
               <label for="amount2">дети:</label>
               <button type="button" class="minus minus-2">-</button>  
-                <input type="number" id="amount2" name="children" value="0">
+              <input class="amounts2" type="number" id="amount2" name="children" value="0">
               <button type="button" class="plus">+</button>
             </div>
             <div class="form-block5">
-              <button type="submit" id=button-intro>найти</button>  
+              <button class="button-form-search" type="submit">найти</button>  
             </div>     
             </form>
           </div>    
       </div>  
-      <script src="js/booking.js"></script>      
+     <script src="js/booking-min.js"></script> 
   </body>
 </html> 
